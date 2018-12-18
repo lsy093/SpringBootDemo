@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: SpringBootDemo Maven Webapp
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: shengyuan.a.li
+Implementation-Vendor-Id: com.test
+Build-Jdk: 1.8.0_172
+Implementation-URL: http://www.example.com
+Created-By: Maven Integration for Eclipse
+
