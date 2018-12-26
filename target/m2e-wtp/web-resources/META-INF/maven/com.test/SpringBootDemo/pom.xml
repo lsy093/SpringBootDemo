@@ -20,7 +20,6 @@
 		<version>2.0.5.RELEASE</version>
 	</parent>
 	<dependencies>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -41,14 +40,12 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
-
 	</dependencies>
-
+	
 	<build>
 		<finalName>SpringBootDemo</finalName>
 		<pluginManagement>
 			<plugins>
-
 				<plugin>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-maven-plugin</artifactId>
@@ -57,9 +54,6 @@
 						<fork>true</fork>
 					</configuration>
 				</plugin>
-
-
-
 			</plugins>
 		</pluginManagement>
 	</build>
