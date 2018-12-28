@@ -1,10 +1,11 @@
-package Web;
+package com.Web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import Pojo.User;
+
+import com.Pojo.User;
 
 @RestController
 public class HelloController {
@@ -28,8 +29,7 @@ public class HelloController {
 
 	@RequestMapping("/insert")
 	public String insert() {
-		jdbcTemplate
-				.execute("insert into room(Room_id,RoomNumber,AdultsCapacity,ChildrenCapacity,Price)"
+		jdbcTemplate.execute("insert into room(Room_id,RoomNumber,AdultsCapacity,ChildrenCapacity,Price)"
 						+ "values('11','305','6','0','260.00')");
 		return "Insert is Successfully";
 	}

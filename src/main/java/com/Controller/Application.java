@@ -1,11 +1,13 @@
-package Web;
+package com.Controller;
 
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 //需要添加@SpringBootApplication注解
 @SpringBootApplication
+@ComponentScan(basePackages="com.*")
 public class Application {
 	public static void main(String[] args) {
 		

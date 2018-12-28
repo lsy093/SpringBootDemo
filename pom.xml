@@ -24,6 +24,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<!-- freemarker模版 -->
+       <dependency>  
+            <groupId>org.springframework.boot</groupId>  
+            <artifactId>spring-boot-starter-freemarker</artifactId>  
+       </dependency>
 		<!--Spring boot热部署 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

@@ -1,18 +1,18 @@
-package Pojo;
+package com.Pojo;
 
-public class Book {
-	private int id;
+public class Room {
+	private int Room_id;
 	private int RoomNumber;
 	private int AdultsCapacity;
 	private int ChildrenCapacity;
 	private double Price;
 	
-	public Book(){
+	public Room(){
 		
 	}
 	
-	public Book(int id, int roomNumber, int adultsCapacity, int childrenCapacity, double price) {
-		this.id = id;
+	public Room(int id, int roomNumber, int adultsCapacity, int childrenCapacity, double price) {
+		this.Room_id = id;
 		this.RoomNumber = roomNumber;
 		this.AdultsCapacity = adultsCapacity;
 		this.ChildrenCapacity = childrenCapacity;
@@ -21,10 +21,10 @@ public class Book {
 	
 	
 	public int getId() {
-		return id;
+		return Room_id;
 	}
 	public void setId(int id) {
-		this.id = id;
+		this.Room_id = id;
 	}
 	public int getRoomNumber() {
 		return RoomNumber;
