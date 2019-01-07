@@ -25,15 +25,18 @@ public class RoomDaoImpl implements RoomDao{
 	}
 
 	@Override
-	public void delete(int userId) {
+	public int delete(int id) {
 		// TODO Auto-generated method stub
-		
+		String sql = "delete * from from room where Room_id=?";
+		return JdbcTemplate.update(sql,id);
 	}
 
 	@Override
-	public void findById(int id) {
+	public Room findById(int id) {
 		// TODO Auto-generated method stub
-		
+		String sql="select * from room where Room_id=?";
+		Room room = JdbcTemplate.queryForObject(sql, new MyRowMapper(),id);
+		return room;
 	}
 
 	@Override

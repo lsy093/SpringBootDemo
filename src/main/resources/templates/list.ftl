@@ -36,7 +36,7 @@
 			<#list roomlist as item>
 				<tr align="center">  
 					<td>
-						<a href="">查看</a>
+						<a href="/rooms/findById?id=${item.id}">查看</a>
 						<a href="">修改</a>
 						<a href="">删除</a>
 					</td>  
