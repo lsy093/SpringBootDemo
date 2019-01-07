@@ -40,8 +40,22 @@
 						<a href="">修改</a>
 						<a href="">删除</a>
 					</td>  
-			    	
-			    	  
+					<td>
+						${item.id}
+					</td>  
+					<td>
+						${item.roomNumber}
+					</td>  
+					<td>
+						${item.adultsCapacity}
+					</td>  
+					<td>
+						${item.childrenCapacity}
+					</td> 
+					<td>
+						${item.price}
+					</td> 
+			    	 
 			    </tr> 
 			</#list>
 			</table>
