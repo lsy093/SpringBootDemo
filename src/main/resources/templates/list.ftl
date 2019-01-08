@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="zh-CN">
 	<head>
 		<meta charset="utf-8">
@@ -25,6 +24,9 @@
 		<center>
 			<table border="1" cellspacing="0" cellpadding="0">
 			<caption><h2>用户列表</h2></caption>
+			
+			<a href="/rooms/insert">新建房间</a>
+			
 				<tr>
 					<th width="200px;">操作</th>
 					<th>房间ID</th>
@@ -37,8 +39,8 @@
 				<tr align="center">  
 					<td>
 						<a href="/rooms/findById?id=${item.id}">查看</a>
-						<a href="">修改</a>
-						<a href="">删除</a>
+						<a href="/rooms/toUpdate?id=${item.id}&roomNumber=${item.roomNumber}&adultsCapacity=${item.adultsCapacity}&childrenCapacity=${item.childrenCapacity}&price=${item.price}">修改</a>
+						<a href="/rooms/delete?id=${item.id}">删除</a>
 					</td>  
 					<td>
 						${item.id}

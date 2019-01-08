@@ -12,17 +12,17 @@ public class MyRowMapper implements RowMapper<Room> {
 	@Override
 	public Room mapRow(ResultSet resultSet, int i) throws SQLException {
 		// TODO Auto-generated method stub
-		int Room_id = resultSet.getInt("Room_id");
-		int RoomNumber = resultSet.getInt("RoomNumber");
-		int AdultsCapacity = resultSet.getInt("AdultsCapacity");
-		int ChildrenCapacity = resultSet.getInt("ChildrenCapacity");
-		double Price = resultSet.getDouble("Price");
+		int id = resultSet.getInt("Room_id");
+		int roomNumber = resultSet.getInt("RoomNumber");
+		int adultsCapacity = resultSet.getInt("AdultsCapacity");
+		int childrenCapacity = resultSet.getInt("ChildrenCapacity");
+		double price = resultSet.getDouble("Price");
 		Room room = new Room();
-		room.setId(Room_id);
-		room.setRoomNumber(RoomNumber);
-		room.setChildrenCapacity(ChildrenCapacity);
-		room.setAdultsCapacity(AdultsCapacity);
-		room.setPrice(Price);
+		room.setId(id);
+		room.setRoomNumber(roomNumber);
+		room.setAdultsCapacity(adultsCapacity);
+		room.setChildrenCapacity(childrenCapacity);
+		room.setPrice(price);
 		return room;
 	}
 
